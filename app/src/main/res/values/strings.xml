@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Event</string>
+    <string name="app_name_novo_usuario">Novo Usuário</string>
+    <string name="app_name_login">Login</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+
+    <string name="prompt_nome">Nome</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entre</string>
+    <string name="action_account">Criar conta</string>
+    <string name="action_event">Criar evento</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="error_invalid_email">Email inválido</string>
+    <string name="error_notfound_email">Email não encontrado</string>
+    <string name="error_invalid_name">Informe nome e sobreno</string>
+    <string name="error_invalid_password">Esta senha é muito curta</string>
+    <string name="error_invalid_account_password">Senha invalida</string>
+    <string name="error_incorrect_password">Senha inválida</string>
+    <string name="error_field_required">Este campo é obrigatório</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="prompt_local">Local</string>
+    <string name="prompt_valor">Valor</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

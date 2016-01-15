@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/evento_name_layout">
+
+        <AutoCompleteTextView
+            android:id="@+id/evennto_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_nome"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/evennto_valor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/evento_name_layout">
+
+        <AutoCompleteTextView
+            android:id="@+id/evento_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_valor"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/evennto_local_layout"
+        android:layout_below="@+id/evennto_valor_layout">
+
+        <AutoCompleteTextView
+            android:id="@+id/evento_local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_local"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/evennto_local_layout"
+        android:layout_centerHorizontal="true"
+        android:headerDayOfMonthTextAppearance="@style/QText"
+        android:headerMonthTextAppearance="@dimen/item_touch_helper_max_drag_scroll_per_frame"
+        android:headerYearTextAppearance="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
+
+    <Button
+        android:id="@+id/new_evento_button" style="?android:textAppearanceSmall"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/action_event"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
